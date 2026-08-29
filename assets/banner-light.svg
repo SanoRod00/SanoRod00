@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Sano Rodrigue, web developer, Kigali, Rwanda">
+  <defs>
+    <linearGradient id="sweepgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14202E" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#14202E" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#14202E" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="spineclip"><rect x="0" y="0" width="108" height="300"/></clipPath>
+  </defs>
+
+  <style>
+    .c    { animation: pop .55s cubic-bezier(.2,.75,.3,1) backwards; }
+    .fade { animation: rise .7s cubic-bezier(.2,.75,.3,1) backwards; }
+    .d1 { animation-delay: .5s; }
+    .d2 { animation-delay: .64s; }
+    .d3 { animation-delay: .98s; }
+    .rule { animation: draw .85s cubic-bezier(.2,.75,.3,1) .8s backwards; transform-origin: 176px 200px; }
+    .sweep { animation: sweep 7s cubic-bezier(.4,0,.6,1) 1.8s infinite; }
+    @keyframes pop  { from { opacity: 0; transform: translateX(-14px); } }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } }
+    @keyframes draw { from { transform: scaleX(0); } }
+    @keyframes sweep { from { transform: translateY(-300px); } to { transform: translateY(600px); } }
+    @media (prefers-reduced-motion: reduce) {
+      .c, .fade, .rule { animation: none; }
+      .sweep { animation: none; opacity: 0; }
+    }
+  </style>
+
+  <rect width="1200" height="300" fill="#EAE4D9"/>
+
+  <g clip-path="url(#spineclip)">
+      <polygon class="c" style="animation-delay:0.00s" points="4,0 34,25.0 4,50 18,25.0" fill="#B87A2E"/>
+      <polygon class="c" style="animation-delay:0.09s" points="38,0 68,25.0 38,50 52,25.0" fill="#14202E"/>
+      <polygon class="c" style="animation-delay:0.18s" points="72,0 102,25.0 72,50 86,25.0" fill="#8C4A2F"/>
+      <polygon class="c" style="animation-delay:0.06s" points="4,50 34,75.0 4,100 18,75.0" fill="#B87A2E"/>
+      <polygon class="c" style="animation-delay:0.15s" points="38,50 68,75.0 38,100 52,75.0" fill="#14202E"/>
+      <polygon class="c" style="animation-delay:0.24s" points="72,50 102,75.0 72,100 86,75.0" fill="#8C4A2F"/>
+      <polygon class="c" style="animation-delay:0.12s" points="4,100 34,125.0 4,150 18,125.0" fill="#B87A2E"/>
+      <polygon class="c" style="animation-delay:0.21s" points="38,100 68,125.0 38,150 52,125.0" fill="#14202E"/>
+      <polygon class="c" style="animation-delay:0.30s" points="72,100 102,125.0 72,150 86,125.0" fill="#8C4A2F"/>
+      <polygon class="c" style="animation-delay:0.18s" points="4,150 34,175.0 4,200 18,175.0" fill="#B87A2E"/>
+      <polygon class="c" style="animation-delay:0.27s" points="38,150 68,175.0 38,200 52,175.0" fill="#14202E"/>
+      <polygon class="c" style="animation-delay:0.36s" points="72,150 102,175.0 72,200 86,175.0" fill="#8C4A2F"/>
+      <polygon class="c" style="animation-delay:0.24s" points="4,200 34,225.0 4,250 18,225.0" fill="#B87A2E"/>
+      <polygon class="c" style="animation-delay:0.33s" points="38,200 68,225.0 38,250 52,225.0" fill="#14202E"/>
+      <polygon class="c" style="animation-delay:0.42s" points="72,200 102,225.0 72,250 86,225.0" fill="#8C4A2F"/>
+      <polygon class="c" style="animation-delay:0.30s" points="4,250 34,275.0 4,300 18,275.0" fill="#B87A2E"/>
+      <polygon class="c" style="animation-delay:0.39s" points="38,250 68,275.0 38,300 52,275.0" fill="#14202E"/>
+      <polygon class="c" style="animation-delay:0.48s" points="72,250 102,275.0 72,300 86,275.0" fill="#8C4A2F"/>
+    <rect class="sweep" x="0" y="-300" width="108" height="300" fill="url(#sweepgrad)"/>
+  </g>
+
+  <text class="fade d1" x="176" y="100" fill="#B87A2E" font-size="15" letter-spacing="5.5"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">KIGALI &#183; RWANDA</text>
+
+  <text class="fade d2" x="176" y="166" fill="#14202E" font-size="54" letter-spacing="2.5"
+        font-family="'Arial Black', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="900">SANO RODRIGUE</text>
+
+  <rect class="rule" x="176" y="186" width="548" height="4" fill="#B87A2E"/>
+
+  <text class="fade d3" x="176" y="228" fill="#6B6559" font-size="19" letter-spacing="0.6"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">Web developer &#183; Data science &#183; Smart contracts</text>
+
+  <text class="fade d3" x="1152" y="268" text-anchor="end" fill="#6B6559" font-size="14" letter-spacing="1.5"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">github.com/SanoRod00</text>
+</svg>
